@@ -12,6 +12,8 @@
 <div class="container">
     <h1>Exercices PHP Partie 2</h1>
     <h2>Exercice 2</h2>
+
+    <p>Version 1</p>
     <?php 
         $a = 0;
         $b = 15;
@@ -20,7 +22,8 @@
             $a++;
         }
     ?>
-    <p>2 version</p>
+
+    <p>Version 2</p>
     <?php
         $a = 0;
         $b = 15;
@@ -29,9 +32,10 @@
             $a++;
     }
     ?>
-        <p>3 version</p>
+
+    <p>Version 3</p>
     <?php
-        $randomNumber = rand(1, 1OO);
+        $randomNumber = rand(1, 100);
         for ($number = 0; $number <=20; $number++) { // initialisation, condition, incrementation
             ?>
             <p><?= 'Ma premiere variable : '. $number ?></p>

@@ -12,6 +12,8 @@
 <div class="container">
     <h1>Exercices PHP Partie 2</h1>
     <h2>Exercice 3</h2>
+
+    <p>Version 1</p>
     <?php
         $a = 1;
         while ($a <= 15) {
@@ -19,13 +21,15 @@
             $a++;
         }
     ?>
-        <p>2 version</p>
+
+    <p>Version 2</p>
     <?php
     for($i = 1; $i <= 15; $i++) {
     var_dump('on y arrive presque');
     }
     ?>
-            <p>3 version</p>
+
+    <p>Version 3</p>
     <?php
     for($i = 1; $i <= 15; $i++) {
     if($i !=15){
@@ -36,22 +40,21 @@
     }
     ?>
 
-<p>3 version</p>
+    <p>Version 4</p>
     <?php
     for($i = 1; $i <= 15; $i++) {
     var_dump('on y arrive presque');
     }
     ?>
 
-<p>4 version</p>
+    <p>Version 5</p>
     <?php
-$i=1
-while($i<=15) {
-  echo "<p>Tour $x : On y est presque</p>";
-  $i++;
-} echo "<p>Voilà fini</p>";
+    $i=1;
+    while($i<=15) {
+        echo "<p>Tour $i : On y est presque</p>";
+        $i++;
+    } echo "<p>Voilà fini</p>";
     ?>
-
 
 </div>
 </body>

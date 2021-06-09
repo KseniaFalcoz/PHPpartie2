@@ -12,7 +12,9 @@
 <div class="container">
     <h1>Exercices PHP Partie 2</h1>
     <h2>Exercice bonus</h2>
-    <?php
+
+    <p>Version 1</p>
+<?php
     $dropdown = array('janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre');
     $show='<select name="drop_down">';
         for($i = 0, $c = count($dropdown); $i < $c; $i++) {
@@ -20,6 +22,22 @@
         }
         echo $show;
 ?>
+
+    <p>Version 2</p>
+    <?php
+        $tab = array('Janvier','Fevrier','Mars','Avril','Mai','Juin','Juillet','Août', 'Septembre','Octobre','Novembre','Décembre');
+      ?>
+      <select>
+        <?php
+        foreach ($tab as $value) {
+          ?>
+          <option><?= $value ?></option>
+          <?php
+        }
+        ?>
+      </select>
+
+
 </div>
 </body>
 </html>
