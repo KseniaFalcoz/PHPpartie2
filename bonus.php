@@ -11,31 +11,15 @@
 <body>
 <div class="container">
     <h1>Exercices PHP Partie 2</h1>
-    <h2>Exercice 1</h2>
-    <p>version 1</p>
+    <h2>Exercice bonus</h2>
     <?php
-        for($i = 0; $i <= 10; $i++) {
-            echo($i);
+    $dropdown = array('janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre');
+    $show='<select name="drop_down">';
+        for($i = 0, $c = count($dropdown); $i < $c; $i++) {
+        $show.='<option value="'.$i.'">'.$dropdown[$i].' </option>';
         }
-    ?>
-    <p>version 2</p>
-    <?php
-    $number = 0;
-        while($number <= 10) {
-            echo $number. '<br>';
-            $number ++;
-            
-        }
-    ?>
-    <p>version 3</p>
-    <?php
-    $number = 0;
-    while($number <= 10) {
-        ?>
-        <p><?= $number ?></p>
-        <?php $number++ ;
-    }
-    ?>
+        echo $show;
+?>
 </div>
 </body>
 </html>

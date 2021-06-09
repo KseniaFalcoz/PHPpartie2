@@ -12,6 +12,34 @@
 <div class="container">
     <h1>Exercices PHP Partie 2</h1>
     <h2>Exercice 2</h2>
+    <?php 
+        $a = 0;
+        $b = 15;
+        while ($a <= 20) {
+            echo($a*$b);
+            $a++;
+        }
+    ?>
+    <p>2 version</p>
+    <?php
+        $a = 0;
+        $b = 15;
+        while ($a <= 20) {
+            var_dump($a*$b);
+            $a++;
+    }
+    ?>
+        <p>3 version</p>
+    <?php
+        $randomNumber = rand(1, 1OO);
+        for ($number = 0; $number <=20; $number++) { // initialisation, condition, incrementation
+            ?>
+            <p><?= 'Ma premiere variable : '. $number ?></p>
+            <p><?= 'Ma seconde variable : '. $randomNumber ?></p>
+            <p><?= 'La multuplication des deux : '. $number * $randomNumber ?></p>
+            <?php
+        }
+    ?>
 </div>
 </body>
 </html>

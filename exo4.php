@@ -12,6 +12,13 @@
 <div class="container">
     <h1>Exercices PHP Partie 2</h1>
     <h2>Exercice 4</h2>
+    <?php
+        for($i = 1; $i <= 100 ; $i += 15) {
+            ?>
+            <p><?= $i ?></p>
+            <?php
+        }
+    ?>
 </div>
 </body>
 </html>

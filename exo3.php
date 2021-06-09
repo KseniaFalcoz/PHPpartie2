@@ -12,6 +12,47 @@
 <div class="container">
     <h1>Exercices PHP Partie 2</h1>
     <h2>Exercice 3</h2>
+    <?php
+        $a = 1;
+        while ($a <= 15) {
+            echo 'on y arrive presque';
+            $a++;
+        }
+    ?>
+        <p>2 version</p>
+    <?php
+    for($i = 1; $i <= 15; $i++) {
+    var_dump('on y arrive presque');
+    }
+    ?>
+            <p>3 version</p>
+    <?php
+    for($i = 1; $i <= 15; $i++) {
+    if($i !=15){
+        echo 'on y presque. ';
+    }else{
+        echo 'on a atteint';
+    }
+    }
+    ?>
+
+<p>3 version</p>
+    <?php
+    for($i = 1; $i <= 15; $i++) {
+    var_dump('on y arrive presque');
+    }
+    ?>
+
+<p>4 version</p>
+    <?php
+$i=1
+while($i<=15) {
+  echo "<p>Tour $x : On y est presque</p>";
+  $i++;
+} echo "<p>Voilà fini</p>";
+    ?>
+
+
 </div>
 </body>
 </html>
